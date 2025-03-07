@@ -1,0 +1,13 @@
+[package]
+name = "ghostty-sys"
+version = "0.1.0+ghostty-1.1.2"
+edition = "2024"
+authors = ["rsahwe"]
+license = "MIT"
+description = "Low level Rust bindings for libghostty"
+links = "ghostty"
+resolver = "3"
+repository = "https://github.com/rsahwe/ghostty-sys"
+
+[build-dependencies]
+bindgen = "0.71.0"
