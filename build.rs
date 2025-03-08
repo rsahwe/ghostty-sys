@@ -21,7 +21,7 @@ fn top_level_cargo_target_dir() -> std::path::PathBuf {
 }
 
 fn main() {
-    let ghostty_location = std::env::var("GHOSTTY_LOCATION").expect("Missing GHOSTTY_LOCATION containing include/ghostty.h and lib/libghostty.so (or equivalent)");
+    let ghostty_location = std::env::var("GHOSTTY_LOCATION").expect("Missing GHOSTTY_LOCATION containing libghostty.so (or equivalent)");
 
     println!("cargo:rustc-link-search={}", ghostty_location);
     println!("cargo:rustc-link-lib=ghostty");
